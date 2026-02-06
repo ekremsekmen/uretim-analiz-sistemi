@@ -60,7 +60,7 @@ Kalite            = (Toplam Üretim − Fire) / Toplam Üretim
 
 ```bash
 # 1. Projeyi klonla
-git clone https://github.com/KULLANICI_ADIN/uretim-analiz-sistemi.git
+git clone https://github.com/ekremsekmen/uretim-analiz-sistemi.git
 cd uretim-analiz-sistemi
 
 # 2. Sanal ortam oluştur
@@ -100,6 +100,14 @@ Bu sistem demo amaçlı SQLite ile çalışmaktadır. Gerçek bir üretim ortam�
 - **Zamanlayıcı (scheduler)** ile otomatik rapor e-posta gönderilebilir
 - **Makine öğrenmesi** ile arıza tahmini eklenebilir
 - **ERP entegrasyonu** ile stok ve maliyet analizi yapılabilir
+
+---
+
+## 👤 Geliştirici
+
+**Ekrem Sekmen**
+
+- GitHub: [@ekremsekmen](https://github.com/ekremsekmen)
 
 ---
 
