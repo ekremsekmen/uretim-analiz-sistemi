@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+uretim.db
+.DS_Store
+*.xlsx
+HR_MESAJ_METNI.md
+.vscode/
