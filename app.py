@@ -37,15 +37,25 @@ st.markdown("""
 
     /* Sidebar */
     [data-testid="stSidebar"] { background-color: #1e293b; }
-    [data-testid="stSidebar"] * { color: #e2e8f0 !important; }
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] .stMarkdown,
+    [data-testid="stSidebar"] .stMarkdown * { color: #e2e8f0 !important; }
+    /* Input/select icindeki yazilari koyu yap (okunabilirlik) */
+    [data-testid="stSidebar"] input,
+    [data-testid="stSidebar"] select,
+    [data-testid="stSidebar"] [data-baseweb="select"] span,
+    [data-testid="stSidebar"] [data-baseweb="input"] input,
+    [data-testid="stSidebar"] .stDateInput input,
+    [data-testid="stSidebar"] .stSelectbox [data-baseweb="select"] div { color: #0f172a !important; }
+    /* Multiselect tag yazilari */
+    [data-testid="stSidebar"] [data-baseweb="tag"] span { color: #ffffff !important; }
 
     .sidebar-brand {
         text-align: center;
-        padding: 1rem 0 0.5rem 0;
+        padding: 1.2rem 0 0.5rem 0;
     }
-    .sidebar-brand .icon { font-size: 2rem; }
-    .sidebar-brand h2 { margin: 0.3rem 0 0 0; font-size: 1.1rem; font-weight: 700; }
-    .sidebar-brand p { margin: 0; font-size: 0.7rem; color: #94a3b8 !important; letter-spacing: 1.5px; text-transform: uppercase; }
+    .sidebar-brand h2 { margin: 0; font-size: 1.15rem; font-weight: 800; color: #ffffff !important; letter-spacing: -0.3px; }
+    .sidebar-brand p { margin: 0.2rem 0 0 0; font-size: 0.65rem; color: #64748b !important; letter-spacing: 2px; text-transform: uppercase; font-weight: 500; }
     .sidebar-sep { border: 0; height: 1px; background: rgba(148,163,184,0.2); margin: 0.8rem 0; }
 
     /* Metrik kartlar */
@@ -132,8 +142,7 @@ df_ham = veri_yukle()
 with st.sidebar:
     st.markdown("""
     <div class="sidebar-brand">
-        <span class="icon">🏭</span>
-        <h2>Üretim Analiz</h2>
+        <h2>URETIM ANALIZ</h2>
         <p>Karar Destek Sistemi</p>
     </div>
     <hr class="sidebar-sep">
